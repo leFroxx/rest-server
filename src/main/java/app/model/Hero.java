@@ -13,8 +13,8 @@ import org.hibernate.annotations.GenericGenerator;
 public class Hero {
 
 	@Id
-	@GenericGenerator(name="kaugen" , strategy="increment")
-	@GeneratedValue(generator="kaugen")
+	@GeneratedValue(generator = "increment")
+	@GenericGenerator(name = "increment", strategy = "increment")
 	@Column(name="id", unique = true, nullable = false)
     private Long id;
     
